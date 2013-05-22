@@ -11,7 +11,7 @@
     "sequelize": "git://github.com/sequelize/sequelize.git"
   },
   "engines": {
-    "node": "0.10.7",
+    "node": "0.10.x",
     "npm": "1.2.21"
   }
 }
