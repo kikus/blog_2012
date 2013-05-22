@@ -17,8 +17,8 @@
 	<footer>
 		<form method='post' action='/posts/<%= posts[i].id %>'>
 			<input type='hidden' name='_method' value='delete'>
-			<a href="/posts/<%= posts[i].id %>/edit"> Editar </a>
-			<a href="" onclick="submit();return false"> Borrar </a>
+			<a href="/posts/<%= posts[i].id %>/edit">Editar</a>  -  
+			<a href="" onclick="submit();return false">Borrar</a>
 		</form>
 	</footer>
 </article>
@@ -27,6 +27,6 @@
 
 <footer>
 	<nav>
-		<a href="/posts/new"> Crear nuevo Post </a>
+		<a href="/posts/new"> Nuevo post </a>
 	</nav>
 </footer>
