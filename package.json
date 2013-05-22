@@ -7,8 +7,8 @@
   "dependencies": {
     "express": "3.2.4",
     "ejs": "*",
-    "express-partials":"https://github.com/publicclass/express-partials.git#c9b8adde89387dea",
-    "sequelize": "https://github.com/sequelize/sequelize.git"
+    "express-partials":"git://github.com/publicclass/express-partials.git#c9b8adde89387dea",
+    "sequelize": "git://github.com/sequelize/sequelize.git"
   },
   "engines": {
     "node": "0.10.7",
