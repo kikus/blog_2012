@@ -5,6 +5,7 @@ var models = require('../models/models.js');
 var sequelize = require('sequelize');
 var path = require('path');
 var QS = require('querystring');
+var counter = require('./counter');
 // GET /posts
 exports.index = function(req, res, next) {
 	models.Post
@@ -12,7 +13,7 @@ exports.index = function(req, res, next) {
 	.success(function(posts) {
 		res.render('posts/index', 
 		{	title: 'Posts',
-			contador: '1',
+			contador: counter.getCount(),
 			posts: posts
 		});
 	})
@@ -32,7 +33,7 @@ exports.show = function(req, res, next) {
 			res.render('posts/show', {
 				post: post,
 				title: 'Posts',
-				contador: '1'
+				contador: counter.getCount()
 			});
 		} else {
 			console.log('No existe ningun post con id='+id+'.');
@@ -54,7 +55,7 @@ exports.new = function(req, res, next) {
 	res.render('posts/new', {
 		post: post,
 		title: 'Posts',
-		contador: '1'
+		contador: counter.getCount()
 
 	});
 
@@ -71,7 +72,7 @@ exports.create = function(req, res, next) {
 		console.log("Errores de validacion:", validate_errors);
 		res.render('posts/new', {
 			title: 'Posts',
-			contador: '1',
+			contador: counter.getCount(),
 			post: post
 		});
 		return;
@@ -97,7 +98,7 @@ exports.edit = function(req, res, next) {
 		if (post) {
 			res.render('posts/edit', {
 			title: 'Posts',
-			contador: '1',
+			contador: counter.getCount(),
 			post: post});
 		} else {
 			console.log('No existe ningun post con id='+id+'.');
@@ -135,7 +136,7 @@ exports.update = function(req, res, next) {
 				console.log("Error: No puedo editar el post:", error);
 				res.render('posts/edit', {
 					title: 'Posts',
-					contador: '1',
+					contador: counter.getCount(),
 					post: post
 				});
 			});
@@ -186,7 +187,7 @@ exports.search = function(req,res,next){
 	.success(function(posts) {
 		res.render('posts/index', 
 		{	title: 'Posts',
-			contador: '1',
+			contador: counter.getCount(),
 			posts: posts
 		});
 	})
