@@ -1,77 +1,58 @@
-
 body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("/images/bg.jpg");
 }
 
-.sidebar-nav {
-  padding: 9px 0;
+#page_wrapper {
+	margin: 0 auto;
+	min-width: 530px;
+	width: 60%;
+	text-align:left;
 }
 
+aside {
+ text-decoration:none;
+}
+
+aside a{
+	color:#000000;
+	font-size: 15px;
+	background-color: #FFFFFF;
+	text-decoration: none;
+	border-spacing: 30px;
+	border-color: #000000;
+	border-style: solid;
+
+
+}
+#description{
+	font-style: justify;
+	border-spacing: 30px;
+	border-color: #46627A;
+	border-style: solid;
+	padding: 15px 15px;
+	min-width: 640px;
+}
+
+#search {
+	padding: 3px;
+	float:right;
+}
+
+#menu {
+	padding: 8px;
+	float:left;
+}
+
+a {
+  color: #004580;
+}
 
 article {
-  border: 2px solid #ffffff;
-  padding: 7px;
-  margin: 20px;
-  background-color: #e5f5ff;
-}
-
-
-#logininfo {
-  float: right;
-  clear: both;
-}
-
-/*----------------------- 
-Post
-------------------------*/
-.post {
-  padding: 10px 20px 20px 20px;
-  margin-bottom: 30px;
-  background-color: #f8f8f8;
-  -webkit-border-radius: 16px;
-     -moz-border-radius: 16px;
-          border-radius: 16px;
-}
-
-.post h1 {
-  margin-bottom: 0;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: inherit;
-}
-
-.post p {
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 27px;
-  color: inherit;
-}
-
-/*----------------------- 
-Comment
-------------------------*/
-.comment {
-  padding: 10px 20px 20px 20px;
-  margin-bottom: 30px;
-  background-color: #f8f8f8;
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
-
-.comment h1 {
-  margin-bottom: 0;
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: inherit;
-}
-
-.comment p {
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 27px;
-  color: inherit;
+	border: 2px solid #000000;
+	padding: 7px;
+	margin: 20px;
+	background-color: #7895AD;
+	opacity: 0.9;
 }
